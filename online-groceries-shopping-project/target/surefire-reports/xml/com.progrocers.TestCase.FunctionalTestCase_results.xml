@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Unit Test cases "
-           tests="2"
+           tests="3"
            failures="0"
            errors="0"
-           skipped="0"
-           time="100.439">
+           skipped="1"
+           time="98.734">
   <properties />
   
+            <testcase name="createCustomer" time="0.0" classname="com.progrocers.TestCase.FunctionalTestCase">
+          <skipped />
+    </testcase>
   
-            <testcase name="brokenLinks" time="58.084" classname="com.progrocers.TestCase.FunctionalTestCase" />
-                <testcase name="searchAlgorithm" time="42.355" classname="com.progrocers.TestCase.FunctionalTestCase" />
+            <testcase name="brokenLinks" time="55.988" classname="com.progrocers.TestCase.FunctionalTestCase" />
+                <testcase name="searchAlgorithm" time="42.746" classname="com.progrocers.TestCase.FunctionalTestCase" />
       
 </testsuite>

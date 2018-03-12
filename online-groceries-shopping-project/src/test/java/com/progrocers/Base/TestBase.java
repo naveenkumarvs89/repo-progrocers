@@ -38,7 +38,7 @@ public class TestBase {
 	public static ExtentReports exrep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static ExcelReader excel = new ExcelReader(
-			"I:\\Naveen\\Java\\eclipse-testspace\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
+			"C:\\Users\\naveenkumar.v.s.HTSS\\git\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
 	public static String browser;
 
 	@BeforeSuite
@@ -93,7 +93,7 @@ public class TestBase {
 			log.debug("IE Launched Succesfully");
 		}
 		driver.get(config.getProperty("baseurl"));
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Integer.parseInt(config.getProperty("implicit.wait")));
 	}
 

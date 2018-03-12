@@ -96,6 +96,32 @@ public class TestUtil extends TestBase {
 		return datas;
 
 	}
+	
+	@DataProvider(name = "DP1")
+	public Object[][] getdatas(Method m) {
+		String sheetname = m.getName();
+		int row = excel.getRowCount(sheetname);
+		int col = excel.getColumnCount(sheetname);
+
+		// Initializing 2D Object array
+
+		Object datas[][] = new Object[row - 1][1];
+
+		// Initializing Hashtable
+
+		Hashtable<String, String> tab = null;
+
+		for (int rowcnt = 2; rowcnt <= row; rowcnt++) {
+			tab = new Hashtable<String, String>();
+			for (int colcnt = 0; colcnt < col; colcnt++) {
+				tab.put(excel.getCellData(sheetname, "FirstName", 1), excel.getCellData(sheetname, colcnt, rowcnt));
+				datas[rowcnt - 2][0] = tab;
+			}
+		}
+
+		return datas;
+
+	}
 
 	public static boolean isTestRunnable(String testname, ExcelReader excel) {
 		String sheetname = "TestSuite";

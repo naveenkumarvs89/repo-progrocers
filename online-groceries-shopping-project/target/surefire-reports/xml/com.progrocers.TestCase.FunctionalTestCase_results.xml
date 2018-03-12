@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Unit Test cases "
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="100.439">
+  <properties />
+  
+  
+            <testcase name="brokenLinks" time="58.084" classname="com.progrocers.TestCase.FunctionalTestCase" />
+                <testcase name="searchAlgorithm" time="42.355" classname="com.progrocers.TestCase.FunctionalTestCase" />
+      
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ECommerceProject">
+
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="com.progrocers.Listeners.CustomListeners"/>
+  </listeners>
+  
+  <test name="Unit Test cases ">
+    <classes>
+      <class name="com.progrocers.Base.TestBase"/> 
+      <class name="com.progrocers.TestCase.FunctionalTestCase"/>     
+    </classes>
+  </test> <!-- Login Test -->
+</suite> <!-- ECommerceProject -->

@@ -38,7 +38,7 @@ public class TestBase {
 	public static ExtentReports exrep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static ExcelReader excel = new ExcelReader(
-			"C:\\Users\\naveenkumar.v.s.HTSS\\git\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
+			"C:\\Users\\Manoj\\git\\repo-progrocers\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
 	public static String browser;
 
 	@BeforeSuite

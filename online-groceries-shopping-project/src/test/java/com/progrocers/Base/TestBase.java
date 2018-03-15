@@ -4,8 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -38,7 +36,7 @@ public class TestBase {
 	public static ExtentReports exrep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static ExcelReader excel = new ExcelReader(
-			"C:\\Users\\Manoj\\git\\repo-progrocers\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
+			"C:\\Users\\naveenkumar.v.s.HTSS\\git\\repo-progrocers\\online-groceries-shopping-project\\src\\test\\resources\\Excel\\TestSheet.xlsx");
 	public static String browser;
 
 	@BeforeSuite

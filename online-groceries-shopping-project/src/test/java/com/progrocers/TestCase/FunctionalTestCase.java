@@ -7,13 +7,11 @@ import java.net.URL;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import com.progrocers.Base.TestBase;
@@ -86,7 +84,7 @@ public class FunctionalTestCase extends TestBase {
 		}
 	}
 
-	@Test(dataProviderClass=TestUtil.class, dataProvider = "dp1")
+	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp1")
 	public void createNewCustomer(Hashtable<String, String> data) throws InterruptedException {
 		WebElement createAccountlink = driver.findElement(By.xpath("//a[text()='Account']"));
 		createAccountlink.click();

@@ -86,7 +86,7 @@ public class FunctionalTestCase extends TestBase {
 		}
 	}
 
-	@Test(dataProvider = "getdata")
+	@Test(dataProviderClass=TestUtil.class, dataProvider = "dp1")
 	public void createNewCustomer(Hashtable<String, String> data) throws InterruptedException {
 		WebElement createAccountlink = driver.findElement(By.xpath("//a[text()='Account']"));
 		createAccountlink.click();

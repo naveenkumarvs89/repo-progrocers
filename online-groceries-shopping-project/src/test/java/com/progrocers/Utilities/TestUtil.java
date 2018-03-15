@@ -70,7 +70,7 @@ public class TestUtil extends TestBase {
 	}
 
 	// Implementing common data provider using HashTable
-	@DataProvider
+	@DataProvider(name="dp1")
 	public Object[][] getdata() {
 		String sheetname = "CreateCust";
 		int row = excel.getRowCount(sheetname);
